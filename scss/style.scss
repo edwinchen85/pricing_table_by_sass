@@ -29,3 +29,21 @@ $ls: 5px;
 // helpers
 $spacer: 1rem;
 $bs: 0 0 $spacer $light-gray;
+
+
+// General Styles
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: $ff;
+  font-size: $fs-body;
+  color: $clr-body;
+}
+
+h2 {
+  font-size: $fs-h2;
+  color: $clr-heading;
+  letter-spacing: $ls;
+  text-transform: uppercase;
+}
