@@ -47,3 +47,36 @@ h2 {
   letter-spacing: $ls;
   text-transform: uppercase;
 }
+
+
+// Buttons
+.button {
+  display: inline-block;
+  padding: ($spacer * 1.5) ($spacer * 2.5);
+  background: $dark-gray;
+  text: {
+    transform: uppercase;
+    decoration: none;
+  }
+  font-weight: $fw-b;
+  font-size: $fs-sm;
+  color: $white;
+  letter-spacing: $ls;
+  transition: all .2s ease-out;
+
+  &:hover {
+    box-shadow: $bs;
+    background: $clr-accent;
+    transform: scale(1.22);
+  }
+
+  &--accent {
+    background: $white;
+    color: $clr-accent;
+
+    &:hover {
+      background: $dark-gray;
+      color: $white;
+    }
+  }
+}
